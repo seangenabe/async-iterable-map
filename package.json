@@ -1,7 +1,7 @@
 {
   "name": "a-map",
   "version": "1.0.0-0",
-  "description": "Transform items of an async iterable concurrently",
+  "description": "Transforms items of an async iterable concurrently",
   "keywords": [
     "async",
     "await",
