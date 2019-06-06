@@ -1,0 +1,5 @@
+build:
+  image: node:alpine
+  stage: build
+  script:
+    - npm ci --no-audit

@@ -1,0 +1,40 @@
+{
+  "name": "a-map",
+  "version": "1.0.0-0",
+  "description": "Transform items of an async iterable concurrently",
+  "keywords": [
+    "async",
+    "await",
+    "collection",
+    "concurrency",
+    "concurrent",
+    "iterable",
+    "iterator",
+    "map",
+    "parallel",
+    "semaphore",
+    "wait"
+  ],
+  "homepage": "https://gitlab.com/seangenabe/a-map",
+  "bugs": {
+    "url": "https://gitlab.com/seangenabe/a-map/issues"
+  },
+  "repository": "gitlab:seangenabe/a-map",
+  "license": "MIT",
+  "author": "Sean Marvi Oliver Genabe <seanmarviolivergenabe@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "npx -p @seangenabe/tnx tnx || exit 0",
+    "prepublishOnly": "npm run build",
+    "test": "exit 1",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@seangenabe/semaphore": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.4",
+    "typescript": "^3.5.1"
+  }
+}

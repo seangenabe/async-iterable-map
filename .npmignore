@@ -1,0 +1,8 @@
+.vscode/**
+**/*.ts
+!**/*.d.ts
+*.tgz
+*.tsbuildinfo
+.gitlab-ci.yml
+.prettierrc.yml
+tsconfig.json
