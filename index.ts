@@ -1,6 +1,6 @@
 import { Semaphore } from "@seangenabe/semaphore"
 
-class AMapProcessor<T, U>
+class AsyncIterableMapper<T, U>
   implements AsyncIterableIterator<U>, PromiseLike<U[]> {
   private semaphore: Semaphore
   private sourceIterator: AsyncIterator<T> | Iterator<T>
@@ -53,15 +53,15 @@ class AMapProcessor<T, U>
   }
 }
 
-export function aMap<T = unknown, U = unknown>(
+export function map<T = unknown, U = unknown>(
   source: AsyncIterable<T> | Iterable<T>,
   transform: (element: T) => Promise<U> | U,
-  options: AMapOptions = {}
+  options: AsyncIterableMapperOptions = {}
 ): AsyncIterableIterator<U> & PromiseLike<U[]> {
-  return new AMapProcessor(source, transform, options)
+  return new AsyncIterableMapper(source, transform, options)
 }
 
-export interface AMapOptions {
+export interface AsyncIterableMapperOptions {
   concurrency?: number
 }
 

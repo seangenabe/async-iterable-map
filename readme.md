@@ -1,4 +1,4 @@
-# a-map
+# async-iterable-map
 
 Transforms items of an async iterable concurrently
 
@@ -9,10 +9,10 @@ If you like this package, be sure to star its repo, and please consider [donatin
 ## Usage
 
 ```typescript
-import { aMap } from "a-map"
+import { map } from "async-iterable-map"
 ```
 
-### aMap(source, transform, options = {})
+### map(source, transform, options = {})
 
 Generic type parameters:
 * `T = unknown` - type of input elements

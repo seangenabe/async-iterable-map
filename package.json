@@ -1,5 +1,5 @@
 {
-  "name": "a-map",
+  "name": "async-iterable-map",
   "version": "1.0.0",
   "description": "Transforms items of an async iterable concurrently",
   "keywords": [
@@ -15,11 +15,11 @@
     "semaphore",
     "wait"
   ],
-  "homepage": "https://gitlab.com/seangenabe/a-map",
+  "homepage": "https://gitlab.com/seangenabe/async-iterable-map",
   "bugs": {
-    "url": "https://gitlab.com/seangenabe/a-map/issues"
+    "url": "https://gitlab.com/seangenabe/async-iterable-map/issues"
   },
-  "repository": "gitlab:seangenabe/a-map",
+  "repository": "gitlab:seangenabe/async-iterable-map",
   "license": "MIT",
   "author": "Sean Marvi Oliver Genabe <seanmarviolivergenabe@gmail.com>",
   "main": "index.js",
