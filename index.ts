@@ -8,7 +8,7 @@ class AsyncIterableMapper<T, U>
   constructor(
     source: AsyncIterable<T> | Iterable<T>,
     private transform: (element: T) => Promise<U> | U,
-    { concurrency = Infinity }: AMapOptions = {}
+    { concurrency = Infinity }: AsyncIterableMapperOptions = {}
   ) {
     this.semaphore = new Semaphore(concurrency)
     this.sourceIterator = isAsyncIterable(source)
