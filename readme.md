@@ -1,6 +1,12 @@
 # async-iterable-map
 
+
 Transforms items of an async iterable concurrently
+
+[![npm](https://img.shields.io/npm/v/async-iterable-map.svg?style=flat-square)](https://www.npmjs.com/package/async-iterable-map)
+![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/seangenabe/async-iterable-map/master?style=flat-square)
+[![Dependency Status](https://img.shields.io/david/seangenabe/async-iterable-map.svg?style=flat-square)](https://david-dm.org/seangenabe/async-iterable-map)
+[![devDependency Status](https://img.shields.io/david/dev/seangenabe/async-iterable-map.svg?style=flat-square)](https://david-dm.org/seangenabe/async-iterable-map#info=devDependencies)
 
 Like `p-map` but for `AsyncIterable`s.
 
