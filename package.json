@@ -1,6 +1,6 @@
 {
   "name": "async-iterable-map",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Transforms items of an async iterable concurrently",
   "keywords": [
     "async",
